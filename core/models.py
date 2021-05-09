@@ -27,5 +27,42 @@ class NameBaseConfig(BasicConfiguration):
         return f"name: {self.name} slug: {self.slug}"
 
 
-class ServiceType(BasicConfiguration):
+class ServiceType(NameBaseConfig):
     pass
+
+
+class State(models.Model):
+    """
+    get state list from: https://raw.githubusercontent.com/thatisuday/indian-cities-database/master/cities.json
+    """
+    name = models.CharField(max_length=255)
+    slug = models.SlugField()
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.name)
+        super(State, self).save(*args, **kwargs)
+
+    def __str__(self):
+        return f"name: {self.name} slug: {self.slug}"
+
+
+class City(models.Model):
+    """
+    get city list from: https://raw.githubusercontent.com/thatisuday/indian-cities-database/master/cities.json
+    """
+    name = models.CharField(max_length=255)
+    slug = models.SlugField()
+    state = models.ForeignKey(State, on_delete=models.CASCADE)
+
+    class Meta:
+        unique_together = [('slug', 'state')]
+
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.name)
+        super(City, self).save(*args, **kwargs)
+
+    def __str__(self):
+        return f"name: {self.name} slug: {self.slug}"
