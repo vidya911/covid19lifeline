@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'hospital',
     'oxycylinder',
     'patient',
-    'volunteer'
+    'volunteer',
+    'helpdesk'
 ]
 
 MIDDLEWARE = [

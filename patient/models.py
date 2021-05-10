@@ -8,6 +8,7 @@ from django.dispatch import receiver
 
 
 from core.models import BasicConfiguration, City, NameBaseConfig, ServiceType, State
+from hospital.models import Hospital
 
 GENDER = (
         ('M', 'Male'),
@@ -44,14 +45,20 @@ class HelpTicket(BasicConfiguration):
     closed_at = models.DateTimeField()
     state = models.ForeignKey(State, on_delete=models.DO_NOTHING)
     city = models.ForeignKey(City, on_delete=models.DO_NOTHING)
+    hospitals = models.ManyToManyField(Hospital, through='HelpTicketHospital')
 
     def __str__(self):
         return f"Patient name: {self.patient.name} service type: {self.service_type.name} age: {self.patient.age} gender: {self.patient.spo2_level}"
 
 
+class HelpTicketHospital(BasicConfiguration):
+    hospital = models.ForeignKey(Hospital, on_delete=models.DO_NOTHING)
+    help_ticket = models.ForeignKey(HelpTicket, on_delete=models.DO_NOTHING)
+
+
 @receiver(post_save, sender=HelpTicket)
 def queue_help_ticket(sender, **kwargs):
     """
-    on save of HelpTicket, query from database and assign in queue leads
+    on save of HelpTicket, query from database and assign in queue leads stored in redis
     """
     pass
