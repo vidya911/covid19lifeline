@@ -29,7 +29,7 @@ class Hospital(NameBaseConfig):
     city = models.ForeignKey(City, on_delete=models.DO_NOTHING)
     hospital_address = models.TextField(blank=True, null=True)
     source = models.CharField(choices=SOURCE, max_length=10, blank=True, null=True)
-    source_link = models.URLField(blank=True, null=True)
+    source_url = models.URLField(blank=True, null=True)
     # add validator at later stage or make a custom contact number field
     contact_number_1 = models.CharField(max_length=12, blank=True, null=True)
     contact_number_2 = models.CharField(max_length=12, blank=True, null=True)
