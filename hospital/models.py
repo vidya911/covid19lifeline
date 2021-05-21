@@ -11,6 +11,7 @@ HOSPITAL_CATEGORY = (
             ('PRIVATE', 'PRIVATE'),
             ('GOVT', 'GOVT'),
             ('NGO', 'NGO'),
+            ('N/A', 'N/A'),
 
 )
 
@@ -35,19 +36,19 @@ class Hospital(NameBaseConfig):
     contact_number_2 = models.CharField(max_length=12, blank=True, null=True)
     contact_number_3 = models.CharField(max_length=12, blank=True, null=True)
     # bed counts
-    total_beds_allocated_to_covid = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2500)])
+    total_beds_allocated_to_covid = models.IntegerField(default=-1, validators=[MinValueValidator(-1), MaxValueValidator(2500)])
 
-    total_beds_without_oxygen = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2500)])
-    available_beds_without_oxygen = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2500)])
+    total_beds_without_oxygen = models.IntegerField(default=-1, validators=[MinValueValidator(-1), MaxValueValidator(2500)])
+    available_beds_without_oxygen = models.IntegerField(default=-1, validators=[MinValueValidator(-1), MaxValueValidator(2500)])
 
-    total_beds_with_oxygen = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2500)])
-    available_beds_with_oxygen = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2500)])
+    total_beds_with_oxygen = models.IntegerField(default=-1, validators=[MinValueValidator(-1), MaxValueValidator(2500)])
+    available_beds_with_oxygen = models.IntegerField(default=-1, validators=[MinValueValidator(-1), MaxValueValidator(2500)])
 
-    total_icu_beds_without_ventilator = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2500)])
-    available_icu_beds_without_ventilator = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2500)])
+    total_icu_beds_without_ventilator = models.IntegerField(default=-1, validators=[MinValueValidator(-1), MaxValueValidator(2500)])
+    available_icu_beds_without_ventilator = models.IntegerField(default=-1, validators=[MinValueValidator(-1), MaxValueValidator(2500)])
 
-    total_icu_beds_with_ventilator = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2500)])
-    available_icu_beds_with_ventilator = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2500)])
+    total_icu_beds_with_ventilator = models.IntegerField(default=-1, validators=[MinValueValidator(-1), MaxValueValidator(2500)])
+    available_icu_beds_with_ventilator = models.IntegerField(default=-1, validators=[MinValueValidator(-1), MaxValueValidator(2500)])
     added_by = models.ForeignKey(User, blank=True, null=True, on_delete=models.DO_NOTHING)
     last_updated_by = models.ForeignKey(Volunteer, blank=True, null=True, on_delete=models.CASCADE)
 

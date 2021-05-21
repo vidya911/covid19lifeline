@@ -17,7 +17,6 @@ def scrapped_data_upload_path():
 
 class ScrapperByURL(NameBaseConfig):
     state = models.ForeignKey(State, on_delete=models.DO_NOTHING)
-    city = models.ForeignKey(City, on_delete=models.DO_NOTHING)
     service_type = models.ForeignKey(ServiceType, on_delete=models.DO_NOTHING)
     source_url = models.URLField(blank=True, null=True)
     scraper_module = models.CharField(max_length=255)

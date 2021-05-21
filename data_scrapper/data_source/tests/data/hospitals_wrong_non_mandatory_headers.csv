@@ -1,0 +1,4 @@
+﻿"name","wrong_hospital_category","state","city","wrong_hospital_address","source","source_url","contact_number_1","contact_number_2","contact_number_3","total_beds_allocated_to_covid","total_beds_without_oxygen","available_beds_without_oxygen","total_beds_with_oxygen","available_beds_with_oxygen","total_icu_beds_without_ventilator","available_icu_beds_without_ventilator","total_icu_beds_with_ventilator","available_icu_beds_with_ventilator","added_by","last_updated_by"
+"MixedValidHospitalOne","N/A","Bihar","Patna","Boring Road, Patna - 01","GOOGLE","","999999999","898989898","888888888","1","21","2","21","3","21","4","21","5","admin","adminvolunteer"
+"","N/A","","Patna","Boring Road, Patna - 01","GOOGLE","","999999999","898989898","888888888","1","21","2","21","3","21","4","21","5","admin","adminvolunteer"
+"MixedInValidHospitalThree","","Bihar","Patna","","","","","","","","","","","","","","","","",""

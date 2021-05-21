@@ -13,7 +13,7 @@ class BasicConfiguration(models.Model):
 class NameBaseConfig(BasicConfiguration):
     name = models.CharField(max_length=255)
     slug = models.SlugField(blank=True, null=True)
-    active = models.BooleanField()
+    active = models.BooleanField(default=True)
 
     class Meta:
         abstract = True
