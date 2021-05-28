@@ -27,6 +27,9 @@ class NameBaseConfig(BasicConfiguration):
         return f"name: {self.name} slug: {self.slug}"
 
 
+class ResourceType(NameBaseConfig):
+    pass
+
 class ServiceType(NameBaseConfig):
     pass
 

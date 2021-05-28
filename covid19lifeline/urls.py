@@ -17,7 +17,8 @@ from django.contrib import admin
 from django.conf.urls.static import static
 from django.conf import settings
 from django.urls import path
+from covid_resource.urls import urlpatterns as covid_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + covid_urlpatterns

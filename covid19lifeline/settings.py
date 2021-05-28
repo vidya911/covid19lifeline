@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'core',
     'data_scrapper',
     'homeisolation',
@@ -46,7 +47,9 @@ INSTALLED_APPS = [
     'oxycylinder',
     'patient',
     'volunteer',
-    'helpdesk'
+    'helpdesk',
+    'drf_generators',
+    'covid_resource'
 ]
 
 MIDDLEWARE = [
@@ -159,3 +162,11 @@ LOGGING = {
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+
+## REST FRAMEWORK
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 15
+}

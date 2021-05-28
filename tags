@@ -1,0 +1,263 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALLOWED_HOSTS	covid19lifeline/settings.py	/^ALLOWED_HOSTS = []$/;"	v
+AUTH_PASSWORD_VALIDATORS	covid19lifeline/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	v
+AbstractBaseURLScrapper	data_scrapper/data_source/scrapper_core.py	/^class AbstractBaseURLScrapper(metaclass=abc.ABCMeta):$/;"	c
+BASE_DIR	covid19lifeline/settings.py	/^BASE_DIR = Path(__file__).resolve().parent.parent$/;"	v
+BaseCSVScrapper	data_scrapper/data_source/csv_data_uploader.py	/^class BaseCSVScrapper(objects):$/;"	c
+BaseException	core/exceptions.py	/^class BaseException(Exception):$/;"	c
+BaseScrapper	data_scrapper/data_source/scrapper_core.py	/^class BaseScrapper(objects):$/;"	c
+BasicConfiguration	core/models.py	/^class BasicConfiguration(models.Model):$/;"	c
+City	core/models.py	/^class City(models.Model):$/;"	c
+Command	core/management/commands/populate_state_cities.py	/^class Command(BaseCommand):$/;"	c
+CoreConfig	core/apps.py	/^class CoreConfig(AppConfig):$/;"	c
+DATABASES	covid19lifeline/settings.py	/^DATABASES = {$/;"	v
+DEBUG	covid19lifeline/settings.py	/^DEBUG = True$/;"	v
+DEFAULT_AUTO_FIELD	covid19lifeline/settings.py	/^DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'$/;"	v
+DataScrapperConfig	data_scrapper/apps.py	/^class DataScrapperConfig(AppConfig):$/;"	c
+DataUploader	data_scrapper/data_source/csv_data_uploader.py	/^class DataUploader(BaseScrapper, BaseCSVScrapper):$/;"	c
+GENDER	patient/models.py	/^GENDER = ($/;"	v
+GENDER	volunteer/models.py	/^GENDER = ($/;"	v
+HOSPITAL_CATEGORY	hospital/models.py	/^HOSPITAL_CATEGORY = ($/;"	v
+HelpTicket	patient/models.py	/^class HelpTicket(BasicConfiguration):$/;"	c
+HelpTicketHospital	patient/models.py	/^class HelpTicketHospital(BasicConfiguration):$/;"	c
+HelpdeskConfig	helpdesk/apps.py	/^class HelpdeskConfig(AppConfig):$/;"	c
+HomeisolationConfig	homeisolation/apps.py	/^class HomeisolationConfig(AppConfig):$/;"	c
+Hospital	hospital/models.py	/^class Hospital(NameBaseConfig):$/;"	c
+HospitalConfig	hospital/apps.py	/^class HospitalConfig(AppConfig):$/;"	c
+HospitalJSONSerializer	hospital/serializers.py	/^class HospitalJSONSerializer(serializers.ModelSerializer):$/;"	c
+HospitalLead	helpdesk/models.py	/^class HospitalLead(BasicConfiguration):$/;"	c
+INSTALLED_APPS	covid19lifeline/settings.py	/^INSTALLED_APPS = [$/;"	v
+InvalidServiceType	core/exceptions.py	/^class InvalidServiceType(BaseException):$/;"	c
+JSONScrapper	data_scrapper/data_source/json_data_scrapper.py	/^class JSONScrapper(AbstractBaseURLScrapper, BaseScrapper):$/;"	c
+LANGUAGE_CODE	covid19lifeline/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	v
+LeadRemark	helpdesk/models.py	/^class LeadRemark(models.Model):$/;"	c
+LeadStatus	helpdesk/models.py	/^class LeadStatus(models.Model):$/;"	c
+ListAdminMixin	core/admin.py	/^class ListAdminMixin(object):$/;"	c
+MIDDLEWARE	covid19lifeline/settings.py	/^MIDDLEWARE = [$/;"	v
+Meta	core/models.py	/^    class Meta:$/;"	c	class:BasicConfiguration
+Meta	core/models.py	/^    class Meta:$/;"	c	class:City
+Meta	core/models.py	/^    class Meta:$/;"	c	class:NameBaseConfig
+Meta	hospital/serializers.py	/^     class Meta:$/;"	c	class:HospitalJSONSerializer
+Migration	core/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	data_scrapper/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	helpdesk/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	hospital/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	hospital/migrations/0002_rename_source_link_hospital_source_url.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	patient/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	patient/migrations/0002_auto_20210510_2137.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	volunteer/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	c
+NameBaseConfig	core/models.py	/^class NameBaseConfig(BasicConfiguration):$/;"	c
+OxycylinderConfig	oxycylinder/apps.py	/^class OxycylinderConfig(AppConfig):$/;"	c
+Patient	patient/models.py	/^class Patient(NameBaseConfig):$/;"	c
+PatientConfig	patient/apps.py	/^class PatientConfig(AppConfig):$/;"	c
+ROOT_URLCONF	covid19lifeline/settings.py	/^ROOT_URLCONF = 'covid19lifeline.urls'$/;"	v
+SCRAPPER_RUN_STATUS	data_scrapper/models.py	/^SCRAPPER_RUN_STATUS = ($/;"	v
+SERIALIZER_MAPPING	data_scrapper/data_source/csv_data_uploader.py	/^    SERIALIZER_MAPPING = {$/;"	v	class:DataUploader
+SOURCE	hospital/models.py	/^SOURCE = ($/;"	v
+SOURCE_URL	core/management/commands/populate_state_cities.py	/^SOURCE_URL = "https:\/\/raw.githubusercontent.com\/thatisuday\/indian-cities-database\/master\/cities.json"$/;"	v
+STATIC_URL	covid19lifeline/settings.py	/^STATIC_URL = '\/static\/'$/;"	v
+ScrapperByURL	data_scrapper/models.py	/^class ScrapperByURL(NameBaseConfig):$/;"	c
+ScrapperByURLRunLog	data_scrapper/models.py	/^class ScrapperByURLRunLog(BasicConfiguration):$/;"	c
+ServiceType	core/models.py	/^class ServiceType(NameBaseConfig):$/;"	c
+State	core/models.py	/^class State(models.Model):$/;"	c
+TEMPLATES	covid19lifeline/settings.py	/^TEMPLATES = [$/;"	v
+TICKET_STATUS	patient/models.py	/^TICKET_STATUS = ($/;"	v
+TIME_ZONE	covid19lifeline/settings.py	/^TIME_ZONE = 'UTC'$/;"	v
+USE_I18N	covid19lifeline/settings.py	/^USE_I18N = True$/;"	v
+USE_L10N	covid19lifeline/settings.py	/^USE_L10N = True$/;"	v
+USE_TZ	covid19lifeline/settings.py	/^USE_TZ = True$/;"	v
+Volunteer	volunteer/models.py	/^class Volunteer(NameBaseConfig):$/;"	c
+VolunteerConfig	volunteer/apps.py	/^class VolunteerConfig(AppConfig):$/;"	c
+WSGI_APPLICATION	covid19lifeline/settings.py	/^WSGI_APPLICATION = 'covid19lifeline.wsgi.application'$/;"	v
+__init__	core/admin.py	/^    def __init__(self, model, admin_site):$/;"	m	class:ListAdminMixin
+__init__	data_scrapper/data_source/csv_data_uploader.py	/^    def __init__(self, json_data, service_type, data_type):$/;"	m	class:DataUploader
+__init__	data_scrapper/data_source/json_data_scrapper.py	/^    def __init__(self, url, state=None, service_type=None):$/;"	m	class:JSONScrapper
+__str__	core/models.py	/^    def __str__(self):$/;"	m	class:City	file:
+__str__	core/models.py	/^    def __str__(self):$/;"	m	class:NameBaseConfig	file:
+__str__	core/models.py	/^    def __str__(self):$/;"	m	class:State	file:
+__str__	patient/models.py	/^    def __str__(self):$/;"	m	class:HelpTicket	file:
+__str__	patient/models.py	/^    def __str__(self):$/;"	m	class:Patient	file:
+__str__	volunteer/models.py	/^    def __str__(self):$/;"	m	class:Volunteer	file:
+abstract	core/models.py	/^        abstract = True$/;"	v	class:BasicConfiguration.Meta
+abstract	core/models.py	/^        abstract = True$/;"	v	class:NameBaseConfig.Meta
+active	core/models.py	/^    active = models.BooleanField()$/;"	v	class:NameBaseConfig
+added_by	hospital/models.py	/^    added_by = models.ForeignKey(User, blank=True, null=True, on_delete=models.DO_NOTHING)$/;"	v	class:Hospital
+added_by	patient/models.py	/^    added_by = models.ForeignKey(User, on_delete = models.DO_NOTHING)$/;"	v	class:Patient
+admin_class	core/admin.py	/^    admin_class = type('AdminClass', (ListAdminMixin, admin.ModelAdmin), {})$/;"	v
+age	patient/models.py	/^    age = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(150)])$/;"	v	class:Patient
+age	volunteer/models.py	/^    age = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(150)])$/;"	v	class:Volunteer
+application	covid19lifeline/asgi.py	/^application = get_asgi_application()$/;"	v
+application	covid19lifeline/wsgi.py	/^application = get_wsgi_application()$/;"	v
+assigned_to	helpdesk/models.py	/^    assigned_to = models.ForeignKey(Volunteer, on_delete=models.DO_NOTHING)$/;"	v	class:HospitalLead
+available_beds_with_oxygen	hospital/models.py	/^    available_beds_with_oxygen = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2500)])$/;"	v	class:Hospital
+available_beds_without_oxygen	hospital/models.py	/^    available_beds_without_oxygen = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2500)])$/;"	v	class:Hospital
+available_icu_beds_with_ventilator	hospital/models.py	/^    available_icu_beds_with_ventilator = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2500)])$/;"	v	class:Hospital
+available_icu_beds_without_ventilator	hospital/models.py	/^    available_icu_beds_without_ventilator = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2500)])$/;"	v	class:Hospital
+city	hospital/models.py	/^    city = models.ForeignKey(City, on_delete=models.DO_NOTHING)$/;"	v	class:Hospital
+city	patient/models.py	/^    city = models.ForeignKey(City, on_delete=models.DO_NOTHING)$/;"	v	class:HelpTicket
+closed_at	patient/models.py	/^    closed_at = models.DateTimeField()$/;"	v	class:HelpTicket
+comment	helpdesk/models.py	/^    comment = models.TextField(null=True, blank=True)$/;"	v	class:HospitalLead
+contact_number	patient/models.py	/^    contact_number = models.CharField(max_length=12)$/;"	v	class:Patient
+contact_number_1	hospital/models.py	/^    contact_number_1 = models.CharField(max_length=12, blank=True, null=True)$/;"	v	class:Hospital
+contact_number_2	hospital/models.py	/^    contact_number_2 = models.CharField(max_length=12, blank=True, null=True)$/;"	v	class:Hospital
+contact_number_3	hospital/models.py	/^    contact_number_3 = models.CharField(max_length=12, blank=True, null=True)$/;"	v	class:Hospital
+covid_positive	patient/models.py	/^    covid_positive = models.BooleanField(default=True)$/;"	v	class:Patient
+created_at	core/models.py	/^    created_at = models.DateTimeField(auto_now_add=True)$/;"	v	class:BasicConfiguration
+data_csv_data	data_scrapper/models.py	/^    data_csv_data = models.FileField(upload_to=scrapped_data_upload_path)$/;"	v	class:ScrapperByURLRunLog
+data_source	data_scrapper/models.py	/^    data_source = models.ForeignKey(ScrapperByURL, on_delete=models.DO_NOTHING)$/;"	v	class:ScrapperByURLRunLog
+default_auto_field	core/apps.py	/^    default_auto_field = 'django.db.models.BigAutoField'$/;"	v	class:CoreConfig
+default_auto_field	data_scrapper/apps.py	/^    default_auto_field = 'django.db.models.BigAutoField'$/;"	v	class:DataScrapperConfig
+default_auto_field	helpdesk/apps.py	/^    default_auto_field = 'django.db.models.BigAutoField'$/;"	v	class:HelpdeskConfig
+default_auto_field	homeisolation/apps.py	/^    default_auto_field = 'django.db.models.BigAutoField'$/;"	v	class:HomeisolationConfig
+default_auto_field	hospital/apps.py	/^    default_auto_field = 'django.db.models.BigAutoField'$/;"	v	class:HospitalConfig
+default_auto_field	oxycylinder/apps.py	/^    default_auto_field = 'django.db.models.BigAutoField'$/;"	v	class:OxycylinderConfig
+default_auto_field	patient/apps.py	/^    default_auto_field = 'django.db.models.BigAutoField'$/;"	v	class:PatientConfig
+default_auto_field	volunteer/apps.py	/^    default_auto_field = 'django.db.models.BigAutoField'$/;"	v	class:VolunteerConfig
+dependencies	core/migrations/0001_initial.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	data_scrapper/migrations/0001_initial.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	helpdesk/migrations/0001_initial.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	hospital/migrations/0001_initial.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	hospital/migrations/0002_rename_source_link_hospital_source_url.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	patient/migrations/0001_initial.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	patient/migrations/0002_auto_20210510_2137.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	volunteer/migrations/0001_initial.py	/^    dependencies = [$/;"	v	class:Migration
+error_log	data_scrapper/models.py	/^    error_log = models.TextField(blank=True, null=True)$/;"	v	class:ScrapperByURLRunLog
+field	patient/migrations/0002_auto_20210510_2137.py	/^            field=models.ManyToManyField(through='patient.HelpTicketHospital', to='hospital.Hospital'),$/;"	v	class:Migration
+fields	core/migrations/0001_initial.py	/^            fields=[$/;"	v	class:Migration
+fields	data_scrapper/migrations/0001_initial.py	/^            fields=[$/;"	v	class:Migration
+fields	helpdesk/migrations/0001_initial.py	/^            fields=[$/;"	v	class:Migration
+fields	hospital/migrations/0001_initial.py	/^            fields=[$/;"	v	class:Migration
+fields	hospital/serializers.py	/^        fields = ['id', 'account_name', 'users', 'created']$/;"	v	class:HospitalJSONSerializer.Meta
+fields	patient/migrations/0001_initial.py	/^            fields=[$/;"	v	class:Migration
+fields	patient/migrations/0002_auto_20210510_2137.py	/^            fields=[$/;"	v	class:Migration
+fields	volunteer/migrations/0001_initial.py	/^            fields=[$/;"	v	class:Migration
+gender	patient/models.py	/^    gender = models.CharField(choices=GENDER, max_length=1)$/;"	v	class:Patient
+gender	volunteer/models.py	/^    gender = models.CharField(choices=GENDER, max_length=1)$/;"	v	class:Volunteer
+get_all_urls_from_source_urls	data_scrapper/data_source/json_data_scrapper.py	/^    def get_all_urls_from_source_urls(self):$/;"	m	class:JSONScrapper
+get_all_urls_from_source_urls	data_scrapper/data_source/scrapper_core.py	/^    def get_all_urls_from_source_urls(self):$/;"	m	class:AbstractBaseURLScrapper
+get_serializer_class	data_scrapper/data_source/csv_data_uploader.py	/^    def get_serializer_class(cls, service_type):$/;"	m	class:DataUploader
+get_state_name	data_scrapper/data_source/scrapper_core.py	/^    def get_state_name(state_name):$/;"	m	class:BaseScrapper
+handle	core/management/commands/populate_state_cities.py	/^    def handle(self, *args, **options):$/;"	m	class:Command
+help	core/management/commands/populate_state_cities.py	/^    help = 'Populate state and city'$/;"	v	class:Command
+help_ticket	patient/models.py	/^    help_ticket = models.ForeignKey(HelpTicket, on_delete=models.DO_NOTHING)$/;"	v	class:HelpTicketHospital
+hospital	helpdesk/models.py	/^    hospital = models.ForeignKey(Hospital, on_delete=models.DO_NOTHING)$/;"	v	class:HospitalLead
+hospital	patient/models.py	/^    hospital = models.ForeignKey(Hospital, on_delete=models.DO_NOTHING)$/;"	v	class:HelpTicketHospital
+hospital_address	hospital/models.py	/^    hospital_address = models.TextField(blank=True, null=True)$/;"	v	class:Hospital
+hospital_category	hospital/models.py	/^    hospital_category = models.CharField(choices=HOSPITAL_CATEGORY, max_length=10, blank=True, null=True)$/;"	v	class:Hospital
+hospitals	patient/models.py	/^    hospitals = models.ManyToManyField(Hospital, through='HelpTicketHospital')$/;"	v	class:HelpTicket
+initial	core/migrations/0001_initial.py	/^    initial = True$/;"	v	class:Migration
+initial	data_scrapper/migrations/0001_initial.py	/^    initial = True$/;"	v	class:Migration
+initial	helpdesk/migrations/0001_initial.py	/^    initial = True$/;"	v	class:Migration
+initial	hospital/migrations/0001_initial.py	/^    initial = True$/;"	v	class:Migration
+initial	patient/migrations/0001_initial.py	/^    initial = True$/;"	v	class:Migration
+initial	volunteer/migrations/0001_initial.py	/^    initial = True$/;"	v	class:Migration
+last_updated_by	hospital/models.py	/^    last_updated_by = models.ForeignKey(Volunteer, blank=True, null=True, on_delete=models.CASCADE)$/;"	v	class:Hospital
+lead_remark	helpdesk/models.py	/^    lead_remark = models.ForeignKey(LeadRemark, on_delete=models.DO_NOTHING)$/;"	v	class:HospitalLead
+lead_status	helpdesk/models.py	/^    lead_status = models.ForeignKey(LeadStatus, on_delete=models.DO_NOTHING)$/;"	v	class:HospitalLead
+main	manage.py	/^def main():$/;"	f
+make_request	data_scrapper/data_source/scrapper_core.py	/^    def make_request(url):$/;"	m	class:BaseScrapper
+model	hospital/serializers.py	/^        model = Hospital$/;"	v	class:HospitalJSONSerializer.Meta
+model_name	hospital/migrations/0002_rename_source_link_hospital_source_url.py	/^            model_name='hospital',$/;"	v	class:Migration
+model_name	patient/migrations/0002_auto_20210510_2137.py	/^            model_name='helpticket',$/;"	v	class:Migration
+models	core/admin.py	/^models = apps.get_models()$/;"	v
+name	core/apps.py	/^    name = 'core'$/;"	v	class:CoreConfig
+name	core/migrations/0001_initial.py	/^            name='City',$/;"	v	class:Migration
+name	core/migrations/0001_initial.py	/^            name='ServiceType',$/;"	v	class:Migration
+name	core/migrations/0001_initial.py	/^            name='State',$/;"	v	class:Migration
+name	core/models.py	/^    name = models.CharField(max_length=255)$/;"	v	class:City
+name	core/models.py	/^    name = models.CharField(max_length=255)$/;"	v	class:NameBaseConfig
+name	core/models.py	/^    name = models.CharField(max_length=255)$/;"	v	class:State
+name	data_scrapper/apps.py	/^    name = 'data_scrapper'$/;"	v	class:DataScrapperConfig
+name	data_scrapper/migrations/0001_initial.py	/^            name='ScrapperByURL',$/;"	v	class:Migration
+name	data_scrapper/migrations/0001_initial.py	/^            name='ScrapperByURLRunLog',$/;"	v	class:Migration
+name	helpdesk/apps.py	/^    name = 'helpdesk'$/;"	v	class:HelpdeskConfig
+name	helpdesk/migrations/0001_initial.py	/^            name='HospitalLead',$/;"	v	class:Migration
+name	helpdesk/migrations/0001_initial.py	/^            name='LeadRemark',$/;"	v	class:Migration
+name	helpdesk/migrations/0001_initial.py	/^            name='LeadStatus',$/;"	v	class:Migration
+name	helpdesk/models.py	/^    name = models.CharField(max_length=32, primary_key=True)$/;"	v	class:LeadRemark
+name	helpdesk/models.py	/^    name = models.CharField(max_length=32, primary_key=True)$/;"	v	class:LeadStatus
+name	homeisolation/apps.py	/^    name = 'homeisolation'$/;"	v	class:HomeisolationConfig
+name	hospital/apps.py	/^    name = 'hospital'$/;"	v	class:HospitalConfig
+name	hospital/migrations/0001_initial.py	/^            name='Hospital',$/;"	v	class:Migration
+name	oxycylinder/apps.py	/^    name = 'oxycylinder'$/;"	v	class:OxycylinderConfig
+name	patient/apps.py	/^    name = 'patient'$/;"	v	class:PatientConfig
+name	patient/migrations/0001_initial.py	/^            name='HelpTicket',$/;"	v	class:Migration
+name	patient/migrations/0001_initial.py	/^            name='Patient',$/;"	v	class:Migration
+name	patient/migrations/0002_auto_20210510_2137.py	/^            name='HelpTicketHospital',$/;"	v	class:Migration
+name	patient/migrations/0002_auto_20210510_2137.py	/^            name='hospitals',$/;"	v	class:Migration
+name	volunteer/apps.py	/^    name = 'volunteer'$/;"	v	class:VolunteerConfig
+name	volunteer/migrations/0001_initial.py	/^            name='Volunteer',$/;"	v	class:Migration
+new_name	hospital/migrations/0002_rename_source_link_hospital_source_url.py	/^            new_name='source_url',$/;"	v	class:Migration
+old_name	hospital/migrations/0002_rename_source_link_hospital_source_url.py	/^            old_name='source_link',$/;"	v	class:Migration
+on_call	volunteer/models.py	/^    on_call = models.BooleanField(default=False)$/;"	v	class:Volunteer
+operations	core/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
+operations	data_scrapper/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
+operations	helpdesk/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
+operations	hospital/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
+operations	hospital/migrations/0002_rename_source_link_hospital_source_url.py	/^    operations = [$/;"	v	class:Migration
+operations	patient/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
+operations	patient/migrations/0002_auto_20210510_2137.py	/^    operations = [$/;"	v	class:Migration
+operations	volunteer/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
+options	core/migrations/0001_initial.py	/^            options={$/;"	v	class:Migration
+options	data_scrapper/migrations/0001_initial.py	/^            options={$/;"	v	class:Migration
+options	helpdesk/migrations/0001_initial.py	/^            options={$/;"	v	class:Migration
+options	hospital/migrations/0001_initial.py	/^            options={$/;"	v	class:Migration
+options	patient/migrations/0001_initial.py	/^            options={$/;"	v	class:Migration
+options	patient/migrations/0002_auto_20210510_2137.py	/^            options={$/;"	v	class:Migration
+options	volunteer/migrations/0001_initial.py	/^            options={$/;"	v	class:Migration
+parse_data_from_source	data_scrapper/data_source/json_data_scrapper.py	/^    def parse_data_from_source(self):$/;"	m	class:JSONScrapper
+parse_data_from_source	data_scrapper/data_source/scrapper_core.py	/^    def parse_data_from_source(self):$/;"	m	class:AbstractBaseURLScrapper
+patient	patient/models.py	/^    patient = models.ForeignKey(Patient, on_delete=models.DO_NOTHING)$/;"	v	class:HelpTicket
+priority_point	helpdesk/models.py	/^    priority_point = models.IntegerField(validators=[MinValueValidator(-1), MaxValueValidator(100)])$/;"	v	class:HospitalLead
+queue_help_ticket	patient/models.py	/^def queue_help_ticket(sender, **kwargs):$/;"	f
+remark	patient/models.py	/^    remark = models.TextField(null=True, blank=True)$/;"	v	class:HelpTicket
+remarked_by	patient/models.py	/^    remarked_by = models.ForeignKey(User, null=True, blank=True, on_delete=models.DO_NOTHING)$/;"	v	class:HelpTicket
+rfid_no	patient/models.py	/^    rfid_no = models.CharField(max_length=32)$/;"	v	class:Patient
+run	data_scrapper/data_source/scrapper_core.py	/^    def run(self):$/;"	m	class:AbstractBaseURLScrapper
+run_status	data_scrapper/models.py	/^    run_status = models.CharField(choices=SCRAPPER_RUN_STATUS, max_length=10)$/;"	v	class:ScrapperByURLRunLog
+save	core/models.py	/^    def save(self, *args, **kwargs):$/;"	m	class:City
+save	core/models.py	/^    def save(self, *args, **kwargs):$/;"	m	class:NameBaseConfig
+save	core/models.py	/^    def save(self, *args, **kwargs):$/;"	m	class:State
+save	helpdesk/models.py	/^    def save(self, *args, **kwargs):$/;"	m	class:LeadRemark
+save	helpdesk/models.py	/^    def save(self, *args, **kwargs):$/;"	m	class:LeadStatus
+save_json_data_to_db	data_scrapper/data_source/csv_data_uploader.py	/^    def save_json_data_to_db(self, service_type):$/;"	m	class:BaseCSVScrapper
+scraper_module	data_scrapper/models.py	/^    scraper_module = models.CharField(max_length=255)$/;"	v	class:ScrapperByURL
+scrapped_data_upload_path	data_scrapper/models.py	/^def scrapped_data_upload_path():$/;"	f
+service_type	data_scrapper/models.py	/^    service_type = models.ForeignKey(ServiceType, on_delete=models.DO_NOTHING)$/;"	v	class:ScrapperByURL
+service_type	patient/models.py	/^    service_type = models.ForeignKey(ServiceType, on_delete=models.CASCADE)$/;"	v	class:HelpTicket
+slug	core/models.py	/^    slug = models.SlugField()$/;"	v	class:City
+slug	core/models.py	/^    slug = models.SlugField()$/;"	v	class:State
+slug	core/models.py	/^    slug = models.SlugField(blank=True, null=True)$/;"	v	class:NameBaseConfig
+slug	helpdesk/models.py	/^    slug = models.SlugField(blank=True, null=True)$/;"	v	class:LeadRemark
+slug	helpdesk/models.py	/^    slug = models.SlugField(blank=True, null=True)$/;"	v	class:LeadStatus
+source	hospital/models.py	/^    source = models.CharField(choices=SOURCE, max_length=10, blank=True, null=True)$/;"	v	class:Hospital
+source_url	data_scrapper/models.py	/^    source_url = models.URLField(blank=True, null=True)$/;"	v	class:ScrapperByURL
+source_url	hospital/models.py	/^    source_url = models.URLField(blank=True, null=True)$/;"	v	class:Hospital
+spo2_level	patient/models.py	/^    spo2_level = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(100)])$/;"	v	class:Patient
+state	core/models.py	/^    state = models.ForeignKey(State, on_delete=models.CASCADE)$/;"	v	class:City
+state	data_scrapper/models.py	/^    state = models.ForeignKey(State, on_delete=models.DO_NOTHING)$/;"	v	class:ScrapperByURL
+state	hospital/models.py	/^    state = models.ForeignKey(State, on_delete=models.DO_NOTHING)$/;"	v	class:Hospital
+state	patient/models.py	/^    state = models.ForeignKey(State, on_delete=models.DO_NOTHING)$/;"	v	class:HelpTicket
+success_log	data_scrapper/models.py	/^    success_log = models.TextField(blank=True, null=True)$/;"	v	class:ScrapperByURLRunLog
+ticket_status	patient/models.py	/^    ticket_status = models.CharField(choices=TICKET_STATUS, max_length=10)$/;"	v	class:HelpTicket
+time_taken	helpdesk/models.py	/^    time_taken = models.FloatField()$/;"	v	class:HospitalLead
+total_beds_allocated_to_covid	hospital/models.py	/^    total_beds_allocated_to_covid = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2500)])$/;"	v	class:Hospital
+total_beds_with_oxygen	hospital/models.py	/^    total_beds_with_oxygen = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2500)])$/;"	v	class:Hospital
+total_beds_without_oxygen	hospital/models.py	/^    total_beds_without_oxygen = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2500)])$/;"	v	class:Hospital
+total_icu_beds_with_ventilator	hospital/models.py	/^    total_icu_beds_with_ventilator = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2500)])$/;"	v	class:Hospital
+total_icu_beds_without_ventilator	hospital/models.py	/^    total_icu_beds_without_ventilator = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(2500)])$/;"	v	class:Hospital
+unique_together	core/models.py	/^        unique_together = [('slug', 'state')]$/;"	v	class:City.Meta
+updated_at	core/models.py	/^    updated_at = models.DateTimeField(auto_now=True)$/;"	v	class:BasicConfiguration
+upload_from_csv_file	data_scrapper/data_source/csv_data_uploader.py	/^    def upload_from_csv_file(cls, file_path, service_type):$/;"	m	class:DataUploader
+upload_from_json_file	data_scrapper/data_source/csv_data_uploader.py	/^    def upload_from_json_file(cls, file_path, service_type):$/;"	m	class:DataUploader
+urlpatterns	covid19lifeline/urls.py	/^urlpatterns = [$/;"	v
+user	volunteer/models.py	/^    user = models.OneToOneField(User, on_delete = models.CASCADE)$/;"	v	class:Volunteer
+validate	data_scrapper/data_source/csv_data_uploader.py	/^    def validate(self):$/;"	m	class:DataUploader
+validate_json_data	data_scrapper/data_source/csv_data_uploader.py	/^    def validate_json_data(self, service_type):$/;"	m	class:BaseCSVScrapper
+volunteer_end_time	volunteer/models.py	/^    volunteer_end_time = models.TimeField()$/;"	v	class:Volunteer
+volunteer_start_time	volunteer/models.py	/^    volunteer_start_time = models.TimeField()$/;"	v	class:Volunteer
